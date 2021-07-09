@@ -14,7 +14,7 @@ body{
         background-size: cover;
         max-height:100vh;
         height:100vh;
-        width:100vw;
+        width:100%;
         font-family: 'Open Sans', sans-serif;
         box-shadow: rgba(0, 0, 0, 0.747) 0 3px 10px;
         #upper{
@@ -77,7 +77,7 @@ body{
         padding-top:10em;
         padding-bottom: 10em;
         display:flex;
-        width:100vw;
+        width:100%;
         align-items: center;
         text-shadow:gray 1px 1px 5px;
         justify-content: space-evenly;
@@ -95,6 +95,9 @@ body{
         }
     }
     #my-work{
+        background: #d9a7c7;
+        background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7); 
+        background: linear-gradient(to right, #fffcdc, #d9a7c7); 
         padding:4em;
         display:flex;
         flex-direction: column;
@@ -110,7 +113,7 @@ body{
         }
         #projects{
             #projects-list{
-                margin-top:5em;
+                margin-top:2em;
                 display:flex;
                 align-items:center;
                 justify-content: center;
@@ -120,14 +123,15 @@ body{
                     width:auto;
                     display:flex;
                     align-items: center;
-                    padding:2em;
+                    padding:3em;
                     margin:2em;
                     justify-content: space-between;
                     &:nth-last-child(1){
                         margin-bottom:5em;
                     }
                     &:hover{
-                        background-color: rgba(198, 197, 211, 0.3);
+                        background-color: rgba(184, 103, 103, 0.178);
+                        border-radius:20px;
 
                     }
                     h2{
@@ -141,8 +145,8 @@ body{
                     }
                     .project-img{
                         img{
-                            width:350px;
-                            height:350px;
+                            width:450px;
+                            height:400px;
                             border-radius:10px;
                             border:solid white 2px;
                             box-shadow: 1px 1px 10px 1px gray;
@@ -183,7 +187,8 @@ body{
                         margin:20px;
                         margin-top:2.5em;
                         padding:10px;
-                        border-radius:20px;
+                        border-top-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
                         border:solid salmon 3px;
                         font-size:1em;
                         color:whitesmoke;
@@ -194,7 +199,9 @@ body{
                         margin-left:4em;
                         font-family: 'Open Sans', sans-serif;
                         &:hover{
+                            border-radius:20px;
                             cursor:pointer;
+                            transition-delay: .05s;
                         }
                     }
                 }
