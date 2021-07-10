@@ -433,6 +433,7 @@ body #contact #contact-logos li:hover {
   }
   #my-work {
     padding: 0;
+    overflow: hidden;
   }
 }
 
