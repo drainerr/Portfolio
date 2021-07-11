@@ -49,11 +49,15 @@ body header #upper nav ul {
 
 body header #upper nav ul li {
   padding-right: 2.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body header #upper nav ul li a {
   font-weight: bold;
   color: white;
+  margin: auto 3px auto 3px;
 }
 
 body header #upper nav ul li a:hover {

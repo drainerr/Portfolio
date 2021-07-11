@@ -32,9 +32,11 @@ body{
                     display:flex;
                     li{
                         padding-right:2.5vw;
+                        display:flex;
                         a{
                             font-weight: bold;
                             color:white;
+                            margin: auto 3px auto 3px;
                             &:hover{
                                 color:coral;
                                 transition-delay: .1.7s;
@@ -231,7 +233,6 @@ body{
                 }
             }
         }
-
     }
     #contact{
         padding:4em;
