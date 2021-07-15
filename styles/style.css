@@ -257,6 +257,16 @@ body #my-work #projects #projects-list .card .project-img img:hover {
 }
 
 body #my-work #projects #projects-list .card .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 2em;
 }
 
@@ -272,7 +282,7 @@ body #my-work #projects #projects-list .card .desc .techs {
   text-shadow: black 1px 1px;
 }
 
-body #my-work #projects #projects-list .card .desc .techs .orange {
+body #my-work #projects #projects-list .card .desc .techs .html {
   background-color: orangered;
   width: auto;
   padding: 10px;
@@ -280,21 +290,21 @@ body #my-work #projects #projects-list .card .desc .techs .orange {
   margin: 2px;
 }
 
-body #my-work #projects #projects-list .card .desc .techs .pink {
+body #my-work #projects #projects-list .card .desc .techs .scss {
   background-color: palevioletred;
   padding: 10px;
   border-radius: 5px;
   margin: 2px;
 }
 
-body #my-work #projects #projects-list .card .desc .techs .yellow {
+body #my-work #projects #projects-list .card .desc .techs .js {
   background-color: gold;
   padding: 10px;
   border-radius: 5px;
   margin: 2px;
 }
 
-body #my-work #projects #projects-list .card .desc .techs .blue {
+body #my-work #projects #projects-list .card .desc .techs .css {
   background-color: cornflowerblue;
   padding: 10px;
   border-radius: 5px;
@@ -315,7 +325,6 @@ body #my-work #projects #projects-list .card button {
   border: solid brown 3px;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
-  margin-left: 4em;
   font-family: 'Open Sans', sans-serif;
 }
 
