@@ -178,6 +178,7 @@ body{
                         .techs{
                             padding:10px;
                             display:flex;
+                            justify-content: center;
                             font-weight: bold;
                             text-shadow:black 1px 1px;
                             .orange{
@@ -195,6 +196,12 @@ body{
                             }
                             .yellow{
                                 background-color:gold;
+                                padding:10px;
+                                border-radius:5px;
+                                margin:2px;
+                            }
+                            .blue{
+                                background-color:cornflowerblue;
                                 padding:10px;
                                 border-radius:5px;
                                 margin:2px;

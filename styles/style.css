@@ -265,6 +265,9 @@ body #my-work #projects #projects-list .card .desc .techs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: bold;
   text-shadow: black 1px 1px;
 }
@@ -286,6 +289,13 @@ body #my-work #projects #projects-list .card .desc .techs .pink {
 
 body #my-work #projects #projects-list .card .desc .techs .yellow {
   background-color: gold;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+body #my-work #projects #projects-list .card .desc .techs .blue {
+  background-color: cornflowerblue;
   padding: 10px;
   border-radius: 5px;
   margin: 2px;
