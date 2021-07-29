@@ -35,10 +35,26 @@ body header #upper {
   padding: 1.5em;
 }
 
+body header #upper .home-btn {
+  position: fixed;
+}
+
+body header #upper .home-btn a {
+  font-size: 24px;
+  margin-left: -10px;
+}
+
+body header #upper .home-btn a:hover {
+  color: coral;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 body header #upper #logo {
   font-size: 1.8em;
   font-family: 'Lobster', cursive;
   padding-left: 2vw;
+  margin-left: 15px;
 }
 
 body header #upper nav ul {
@@ -432,6 +448,9 @@ body #contact #contact-logos li:hover {
   }
   #upper ul:nth-child(1) {
     padding-left: 25px;
+  }
+  .home-btn {
+    left: 20px;
   }
   #home {
     margin-top: 25vh !important;

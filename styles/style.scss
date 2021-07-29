@@ -22,10 +22,22 @@ body{
             justify-content:space-between;
             align-items: center;
             padding:1.5em;
+            .home-btn{
+                position:fixed;
+                a{
+                    font-size:24px;
+                    margin-left:-10px;
+                    &:hover{
+                        color:coral;
+                        transition: .5s;
+                    }
+                }
+            }
             #logo{      
                 font-size: 1.8em;
                 font-family: 'Lobster', cursive;
                 padding-left:2vw;	
+                margin-left:15px;
             }
             nav{
                 ul{
@@ -309,6 +321,9 @@ body{
                 padding-left:25px;
             }
         }
+    }
+    .home-btn{
+        left:20px;
     }
     #home{
         margin-top:25vh !important;
