@@ -97,9 +97,8 @@ body{
         }
     }
     #my-work{
-        background: #d9a7c7;
-        background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7); 
-        background: linear-gradient(to right, #fffcdc, #d9a7c7); 
+        background: -webkit-linear-gradient(to right, #485563, #29323c); 
+        background: linear-gradient(to right, #485563, #29323c); 
         padding:4em;
         display:flex;
         flex-direction: column;
@@ -107,11 +106,14 @@ body{
         font-family: 'Open Sans', sans-serif;
         h1{
             font-size: 2.5em;
-            color:brown;
+            color:white;
             text-shadow:1px 1px 1px black;
-            font-family: 'Lobster';
+            font-family: 'Cairo';
             font-weight: bold;
-
+            margin-bottom: 1em;
+        }
+        .more-less-symbols{
+            font-size:50px;
         }
         #projects{
             #projects-list{
@@ -138,12 +140,12 @@ body{
 
                     }
                     h2{
-                        color:rgb(175, 47, 47);
+                        color:white;
                         text-shadow:1px 1px 1px black;
                         padding-bottom:1.5em;
                         font-size:2em;
                         max-width:25vw;
-                        font-weight: bold;
+                        font-weight: normal;
                         font-family: 'Lobster';
                         text-align: center;
                     }
@@ -185,7 +187,7 @@ body{
                             display:flex;
                             justify-content: center;
                             font-weight: bold;
-                            text-shadow:black 1px 1px;
+                            text-shadow:black 1.5px 1.5px;
                             min-width:25vw;
                             .html{
                                 background-color:orangered;
@@ -217,7 +219,7 @@ body{
                     button{
                         margin:20px;
                         margin-top:2.5em;
-                        padding:7px;
+                        padding:5px;
                         border-top-right-radius: 10px;
                         border-bottom-left-radius: 10px;
                         border:solid salmon 3px;
@@ -228,6 +230,10 @@ body{
                         border:solid brown 3px;
                         transform: scale(1.1,1.1);
                         font-family: 'Open Sans', sans-serif;
+                        a{
+                            color:wheat;
+                            text-shadow: black 1px 1px;
+                        }
                         &:hover{
                             border-radius:20px;
                             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;

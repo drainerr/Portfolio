@@ -130,9 +130,8 @@ body #about p {
 }
 
 body #my-work {
-  background: #d9a7c7;
-  background: -webkit-gradient(linear, left top, right top, from(#fffcdc), to(#d9a7c7));
-  background: linear-gradient(to right, #fffcdc, #d9a7c7);
+  background: -webkit-gradient(linear, left top, right top, from(#485563), to(#29323c));
+  background: linear-gradient(to right, #485563, #29323c);
   padding: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,10 +148,15 @@ body #my-work {
 
 body #my-work h1 {
   font-size: 2.5em;
-  color: brown;
+  color: white;
   text-shadow: 1px 1px 1px black;
-  font-family: 'Lobster';
+  font-family: 'Cairo';
   font-weight: bold;
+  margin-bottom: 1em;
+}
+
+body #my-work .more-less-symbols {
+  font-size: 50px;
 }
 
 body #my-work #projects #projects-list {
@@ -197,12 +201,12 @@ body #my-work #projects #projects-list .card:hover {
 }
 
 body #my-work #projects #projects-list .card h2 {
-  color: #af2f2f;
+  color: white;
   text-shadow: 1px 1px 1px black;
   padding-bottom: 1.5em;
   font-size: 2em;
   max-width: 25vw;
-  font-weight: bold;
+  font-weight: normal;
   font-family: 'Lobster';
   text-align: center;
 }
@@ -281,7 +285,7 @@ body #my-work #projects #projects-list .card .desc .techs {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
-  text-shadow: black 1px 1px;
+  text-shadow: black 1.5px 1.5px;
   min-width: 25vw;
 }
 
@@ -317,7 +321,7 @@ body #my-work #projects #projects-list .card .desc .techs .css {
 body #my-work #projects #projects-list .card button {
   margin: 20px;
   margin-top: 2.5em;
-  padding: 7px;
+  padding: 5px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border: solid salmon 3px;
@@ -329,6 +333,11 @@ body #my-work #projects #projects-list .card button {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   font-family: 'Open Sans', sans-serif;
+}
+
+body #my-work #projects #projects-list .card button a {
+  color: wheat;
+  text-shadow: black 1px 1px;
 }
 
 body #my-work #projects #projects-list .card button:hover {
