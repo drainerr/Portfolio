@@ -141,7 +141,7 @@ body{
                         color:rgb(175, 47, 47);
                         text-shadow:1px 1px 1px black;
                         padding-bottom:1.5em;
-                        font-size:1.7em;
+                        font-size:2em;
                         max-width:25vw;
                         font-weight: bold;
                         font-family: 'Lobster';
@@ -217,7 +217,7 @@ body{
                     button{
                         margin:20px;
                         margin-top:2.5em;
-                        padding:10px;
+                        padding:7px;
                         border-top-right-radius: 10px;
                         border-bottom-left-radius: 10px;
                         border:solid salmon 3px;
@@ -344,6 +344,9 @@ body{
     #my-work{
         padding:0;
         overflow:hidden;
+    }
+    button{
+        display:none;
     }
 
 }
