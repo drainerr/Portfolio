@@ -120,12 +120,13 @@ body{
                 align-items:center;
                 justify-content: center;
                 flex-wrap: wrap;
+                max-width:90vw;
                 .card{
                     max-width:100vw;
                     width:auto;
                     display:flex;
                     align-items: center;
-                    padding:3em;
+                    padding:1vw;
                     margin:2em;
                     justify-content: space-between;
                     &:nth-last-child(1){
@@ -141,6 +142,7 @@ body{
                         text-shadow:1px 1px 1px black;
                         padding-bottom:1.5em;
                         font-size:1.7em;
+                        max-width:25vw;
                         font-weight: bold;
                         font-family: 'Lobster';
                         text-align: center;
@@ -184,6 +186,7 @@ body{
                             justify-content: center;
                             font-weight: bold;
                             text-shadow:black 1px 1px;
+                            min-width:25vw;
                             .html{
                                 background-color:orangered;
                                 width:auto;
@@ -317,6 +320,10 @@ body{
         img{
             width:300px !important;
             height:300px !important;
+            &:hover{
+                animation:none !important;
+                transform: none !important;
+            }
         }
     }
     .card{
@@ -328,8 +335,12 @@ body{
     }
     h2{
         padding-top:1.5em;
+        max-width:80vw !important;
     }
     } 
+    .techs{
+        padding:0 !important;
+    }
     #my-work{
         padding:0;
         overflow:hidden;
@@ -342,6 +353,27 @@ body{
     }
     #angle-down{
         display:none;
+    }
+}
+@media screen and (max-width:320px){
+    .project-img{
+        img{
+            width: 95vw !important;
+            height: auto !important;
+        } 
+    }
+    nav {
+        ul{
+            flex-direction:column;
+            li{
+                font-size: 20px;
+                margin: 0;
+                margin-top: 5px;
+            }
+        }
+    }
+    #home{
+        margin-top:12vh !important;
     }
 }
 

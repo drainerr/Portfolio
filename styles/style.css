@@ -168,6 +168,7 @@ body #my-work #projects #projects-list {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 90vw;
 }
 
 body #my-work #projects #projects-list .card {
@@ -179,7 +180,7 @@ body #my-work #projects #projects-list .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3em;
+  padding: 1vw;
   margin: 2em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -200,6 +201,7 @@ body #my-work #projects #projects-list .card h2 {
   text-shadow: 1px 1px 1px black;
   padding-bottom: 1.5em;
   font-size: 1.7em;
+  max-width: 25vw;
   font-weight: bold;
   font-family: 'Lobster';
   text-align: center;
@@ -280,6 +282,7 @@ body #my-work #projects #projects-list .card .desc .techs {
           justify-content: center;
   font-weight: bold;
   text-shadow: black 1px 1px;
+  min-width: 25vw;
 }
 
 body #my-work #projects #projects-list .card .desc .techs .html {
@@ -441,6 +444,12 @@ body #contact #contact-logos li:hover {
     width: 300px !important;
     height: 300px !important;
   }
+  .project-img img:hover {
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
   .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -453,6 +462,10 @@ body #contact #contact-logos li:hover {
   }
   .card h2 {
     padding-top: 1.5em;
+    max-width: 80vw !important;
+  }
+  .techs {
+    padding: 0 !important;
   }
   #my-work {
     padding: 0;
@@ -466,6 +479,27 @@ body #contact #contact-logos li:hover {
   }
   #angle-down {
     display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .project-img img {
+    width: 95vw !important;
+    height: auto !important;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav ul li {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 5px;
+  }
+  #home {
+    margin-top: 12vh !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
