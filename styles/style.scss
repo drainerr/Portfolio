@@ -253,7 +253,7 @@ body{
                     }
                 }
                 .wrapper{
-                    width:50vw;
+                    width:70vw;
                     margin:2em auto 2em auto;
                     height:7px;
                     border-radius:20px;
@@ -323,7 +323,8 @@ body{
         }
     }
     .home-btn{
-        left:20px;
+        // left:20px;
+        display:none;
     }
     #home{
         margin-top:25vh !important;

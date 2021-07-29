@@ -363,7 +363,7 @@ body #my-work #projects #projects-list .card button:hover {
 }
 
 body #my-work #projects #projects-list .wrapper {
-  width: 50vw;
+  width: 70vw;
   margin: 2em auto 2em auto;
   height: 7px;
   border-radius: 20px;
@@ -450,7 +450,7 @@ body #contact #contact-logos li:hover {
     padding-left: 25px;
   }
   .home-btn {
-    left: 20px;
+    display: none;
   }
   #home {
     margin-top: 25vh !important;
