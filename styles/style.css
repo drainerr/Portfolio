@@ -37,6 +37,7 @@ body header #upper {
 
 body header #upper .home-btn {
   position: fixed;
+  z-index: 2;
 }
 
 body header #upper .home-btn a {
@@ -45,7 +46,7 @@ body header #upper .home-btn a {
 }
 
 body header #upper .home-btn a:hover {
-  color: coral;
+  color: yellow;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -122,6 +123,7 @@ body #about {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -143,6 +145,38 @@ body #about p {
   color: lavenderblush;
   text-shadow: black 1px 1px;
   font-size: 1.5em;
+}
+
+body #about .about-me {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #about .about-me .cv-button {
+  position: absolute;
+  top: 280px;
+}
+
+body #about .about-me .cv-button button {
+  font-family: 'Cairo';
+  border: none;
+  outline-offset: none;
+  font-size: 18px;
+  padding: 0px 8px;
+  border-radius: 5px;
+}
+
+body #about .about-me .cv-button button:hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 body #my-work {
@@ -468,6 +502,9 @@ body #contact #contact-logos li:hover {
     width: 20rem !important;
     margin-top: 2em;
   }
+  #about .cv-button {
+    top: 570px !important;
+  }
   .project-img img {
     width: 300px !important;
     height: 300px !important;
@@ -499,7 +536,7 @@ body #contact #contact-logos li:hover {
     padding: 0;
     overflow: hidden;
   }
-  button {
+  #my-work button {
     display: none;
   }
 }

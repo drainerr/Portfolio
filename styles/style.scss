@@ -24,11 +24,12 @@ body{
             padding:1.5em;
             .home-btn{
                 position:fixed;
+                z-index:2;
                 a{
                     font-size:24px;
                     margin-left:-10px;
                     &:hover{
-                        color:coral;
+                        color:yellow;
                         transition: .5s;
                     }
                 }
@@ -92,6 +93,7 @@ body{
         padding-bottom: 10em;
         display:flex;
         width:100%;
+        position:relative;
         align-items: center;
         text-shadow:gray 1px 1px 5px;
         justify-content: space-evenly;
@@ -106,6 +108,30 @@ body{
             color:lavenderblush;
             text-shadow:black 1px 1px;
             font-size:1.5em;
+        }
+        .about-me{
+            position: relative;   
+            display:flex;
+            justify-content: center;     
+            .cv-button{
+                position:absolute;
+                top:280px;
+                button{
+                    font-family: 'Cairo';
+                    border:none;
+                    outline-offset: none;
+                    font-size: 18px;
+                    padding:0px 8px;
+                    border-radius:5px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: salmon;
+                        color:black;
+                        transition:.5s;
+                    }
+                }
+
+            }
         }
     }
     #my-work{
@@ -337,6 +363,9 @@ body{
             width:20rem !important;
             margin-top:2em;
         }
+        .cv-button{
+            top:570px !important;
+        }
     }
     .project-img{
         img{
@@ -366,10 +395,11 @@ body{
     #my-work{
         padding:0;
         overflow:hidden;
+        button{
+            display:none;
+        }
     }
-    button{
-        display:none;
-    }
+ 
 
 }
 @media screen and (max-height: 610px){
