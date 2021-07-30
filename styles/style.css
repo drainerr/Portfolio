@@ -502,6 +502,7 @@ body #contact #contact-logos li:hover {
     font-size: 1.5em !important;
     width: 20rem !important;
     margin-top: 2em;
+    margin-left: 50px !important;
   }
   #about .cv-button {
     top: 320px !important;
