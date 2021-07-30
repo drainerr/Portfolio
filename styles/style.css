@@ -511,6 +511,12 @@ body #contact #contact-logos li:hover {
   #angle-down {
     display: none;
   }
+  #my-work h1 {
+    font-size: 2em;
+  }
+  #my-work h1 .more-less-symbols {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -531,6 +537,15 @@ body #contact #contact-logos li:hover {
   }
   #home {
     margin-top: 12vh !important;
+  }
+  #my-work h1 {
+    font-size: 1.7em;
+  }
+  #my-work h1 .more-less-symbols {
+    font-size: 35px;
+  }
+  #my-work .desc h2 {
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
