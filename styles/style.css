@@ -141,7 +141,7 @@ body #about img {
 }
 
 body #about p {
-  max-width: 30vw;
+  max-width: 400px;
   color: lavenderblush;
   text-shadow: black 1px 1px;
   font-size: 1.5em;
@@ -159,7 +159,7 @@ body #about .about-me {
 
 body #about .about-me .cv-button {
   position: absolute;
-  top: 280px;
+  top: 210px;
 }
 
 body #about .about-me .cv-button button {
@@ -167,6 +167,7 @@ body #about .about-me .cv-button button {
   border: none;
   outline-offset: none;
   font-size: 18px;
+  width: 150px;
   padding: 0px 8px;
   border-radius: 5px;
 }
@@ -503,7 +504,7 @@ body #contact #contact-logos li:hover {
     margin-top: 2em;
   }
   #about .cv-button {
-    top: 570px !important;
+    top: 320px !important;
   }
   .project-img img {
     width: 300px !important;
