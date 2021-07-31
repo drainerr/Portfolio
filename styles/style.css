@@ -538,6 +538,12 @@ body #contact #contact-logos li:hover {
     padding: 0;
     overflow: hidden;
   }
+  #my-work h1 {
+    font-size: 2em;
+  }
+  #my-work h1 .more-less-symbols {
+    font-size: 40px;
+  }
   #my-work button {
     display: none;
   }
@@ -549,12 +555,6 @@ body #contact #contact-logos li:hover {
   }
   #angle-down {
     display: none;
-  }
-  #my-work h1 {
-    font-size: 2em;
-  }
-  #my-work h1 .more-less-symbols {
-    font-size: 40px;
   }
 }
 

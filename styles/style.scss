@@ -397,11 +397,17 @@ body{
     #my-work{
         padding:0;
         overflow:hidden;
+        h1{
+            font-size:2em;
+            .more-less-symbols{
+                font-size:40px;
+            }
+        }
         button{
             display:none;
         }
     }
- 
+
 
 }
 @media screen and (max-height: 610px){
@@ -410,14 +416,6 @@ body{
     }
     #angle-down{
         display:none;
-    }
-    #my-work{
-        h1{
-            font-size:2em;
-            .more-less-symbols{
-                font-size:40px;
-            }
-        }
     }
 }
 @media screen and (max-width:320px){
