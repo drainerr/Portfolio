@@ -46,7 +46,7 @@ body header #upper .home-btn a {
 }
 
 body header #upper .home-btn a:hover {
-  color: yellow;
+  color: wheat;
   -webkit-transition: .5s;
   transition: .5s;
 }
