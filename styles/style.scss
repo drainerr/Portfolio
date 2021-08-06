@@ -397,8 +397,9 @@ body{
     #my-work{
         padding:0;
         overflow:hidden;
+        padding:3em !important;
         h1{
-            font-size:2em;
+            font-size:2.2em !important;
             .more-less-symbols{
                 font-size:40px;
             }

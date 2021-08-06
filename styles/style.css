@@ -537,9 +537,10 @@ body #contact #contact-logos li:hover {
   #my-work {
     padding: 0;
     overflow: hidden;
+    padding: 3em !important;
   }
   #my-work h1 {
-    font-size: 2em;
+    font-size: 2.2em !important;
   }
   #my-work h1 .more-less-symbols {
     font-size: 40px;
