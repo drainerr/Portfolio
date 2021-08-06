@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 html{
     scroll-behavior: smooth;
 }
@@ -29,7 +30,7 @@ body{
                     font-size:24px;
                     margin-left:-10px;
                     &:hover{
-                        color:wheat;
+                        color:lightcoral;
                         transition: .5s;
                     }
                 }
@@ -49,9 +50,11 @@ body{
                         a{
                             font-weight: bold;
                             color:white;
+                            font-family:"Poppins";
+                            padding-left:3px;
                             margin: auto 3px auto 3px;
                             &:hover{
-                                color:coral;
+                                color:lightcoral;
                                 transition-delay: .1.7s;
                             }
                         }
@@ -63,7 +66,7 @@ body{
            text-align: center;
            margin-top:30vh;
            font-weight: bold;
-           font-family: 'Open Sans', sans-serif;
+           font-family: 'Poppins';
            text-shadow: black 1px 1px 1px;
             h1{
                 font-size:2.2em;
@@ -95,7 +98,6 @@ body{
         width:100%;
         position:relative;
         align-items: center;
-        text-shadow:gray 1px 1px 5px;
         justify-content: space-evenly;
         font-family: 'Open Sans', sans-serif;
         img{
@@ -106,8 +108,11 @@ body{
         p{
             max-width:400px;
             color:lavenderblush;
-            text-shadow:black 1px 1px;
+            font-weight: bold;
             font-size:1.5em;
+            em{
+                color:lightcoral;
+            }
         }
         .about-me{
             position: relative;   
@@ -226,7 +231,7 @@ body{
                             display:flex;
                             justify-content: center;
                             font-weight: bold;
-                            text-shadow:black 1.5px 1.5px;
+                            text-shadow:black 1px 1px;
                             min-width:25vw;
                             .html{
                                 background-color:orangered;

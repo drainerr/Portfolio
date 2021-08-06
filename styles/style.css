@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -46,7 +47,7 @@ body header #upper .home-btn a {
 }
 
 body header #upper .home-btn a:hover {
-  color: wheat;
+  color: lightcoral;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -74,11 +75,13 @@ body header #upper nav ul li {
 body header #upper nav ul li a {
   font-weight: bold;
   color: white;
+  font-family: "Poppins";
+  padding-left: 3px;
   margin: auto 3px auto 3px;
 }
 
 body header #upper nav ul li a:hover {
-  color: coral;
+  color: lightcoral;
   -webkit-transition-delay: 0.1 0.7s;
           transition-delay: 0.1 0.7s;
 }
@@ -87,7 +90,7 @@ body header #home {
   text-align: center;
   margin-top: 30vh;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins';
   text-shadow: black 1px 1px 1px;
 }
 
@@ -127,7 +130,6 @@ body #about {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-shadow: gray 1px 1px 5px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -143,8 +145,12 @@ body #about img {
 body #about p {
   max-width: 400px;
   color: lavenderblush;
-  text-shadow: black 1px 1px;
+  font-weight: bold;
   font-size: 1.5em;
+}
+
+body #about p em {
+  color: lightcoral;
 }
 
 body #about .about-me {
@@ -336,7 +342,7 @@ body #my-work #projects #projects-list .card .desc .techs {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
-  text-shadow: black 1.5px 1.5px;
+  text-shadow: black 1px 1px;
   min-width: 25vw;
 }
 
