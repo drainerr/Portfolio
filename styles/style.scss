@@ -83,8 +83,8 @@ body{
         }
         #angle-down{
             color:white;
-            padding-left:50%;
-            padding-top:3.5em;
+            margin-left:50%;
+            margin-top:25vh;
             &:hover{
                 cursor: pointer;
             }
@@ -211,9 +211,6 @@ body{
                             @keyframes skew{
                                 0%{
                                     transform:scale(1,1);
-                                }
-                                50%{
-                                    transform:scale(.9,.9);
                                 }
                                 100%{
                                     transform:scale(1.1,1.1);

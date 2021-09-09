@@ -110,8 +110,8 @@ body header #home p span {
 
 body header #angle-down {
   color: white;
-  padding-left: 50%;
-  padding-top: 3.5em;
+  margin-left: 50%;
+  margin-top: 25vh;
 }
 
 body header #angle-down:hover {
@@ -294,10 +294,6 @@ body #my-work #projects #projects-list .card .project-img img:hover {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
   }
-  50% {
-    -webkit-transform: scale(0.9, 0.9);
-            transform: scale(0.9, 0.9);
-  }
   100% {
     -webkit-transform: scale(1.1, 1.1);
             transform: scale(1.1, 1.1);
@@ -308,10 +304,6 @@ body #my-work #projects #projects-list .card .project-img img:hover {
   0% {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
-  }
-  50% {
-    -webkit-transform: scale(0.9, 0.9);
-            transform: scale(0.9, 0.9);
   }
   100% {
     -webkit-transform: scale(1.1, 1.1);
