@@ -119,7 +119,7 @@ body header #angle-down:hover {
 }
 
 body #about {
-  background-color: black;
+  background-color: #232526;
   padding-top: 10em;
   padding-bottom: 10em;
   display: -webkit-box;
@@ -165,7 +165,7 @@ body #about .about-me {
 
 body #about .about-me .cv-button {
   position: absolute;
-  top: 210px;
+  top: 230px;
 }
 
 body #about .about-me .cv-button button {
@@ -503,7 +503,7 @@ body #contact #contact-logos li:hover {
     margin-left: 50px !important;
   }
   #about .cv-button {
-    top: 320px !important;
+    top: 360px !important;
   }
   .project-img img {
     width: 300px !important;
@@ -551,9 +551,6 @@ body #contact #contact-logos li:hover {
 @media screen and (max-height: 610px) {
   #home {
     margin-top: 20vh !important;
-  }
-  #angle-down {
-    display: none;
   }
 }
 

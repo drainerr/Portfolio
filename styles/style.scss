@@ -91,7 +91,7 @@ body{
         }
     }
     #about{
-        background-color: black;
+        background-color: #232526;
         padding-top:10em;
         padding-bottom: 10em;
         display:flex;
@@ -103,7 +103,8 @@ body{
         img{
             width:15em;
             height:15em;
-            border-radius:50%;      
+            border-radius:50%;     
+            box-shadow: rgb(6 24 44 / 40%) 0px 0px 0px 2px, rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset; 
         }
         p{
             max-width:400px;
@@ -120,7 +121,7 @@ body{
             justify-content: center;     
             .cv-button{
                 position:absolute;
-                top:210px;
+                top:230px;
                 button{
                     font-family: 'Cairo';
                     border:none;
@@ -303,7 +304,7 @@ body{
         color: white;
         display:flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         font-weight: bold;
         font-family:'Open Sans', sans-serif;
@@ -368,7 +369,7 @@ body{
             margin-left:50px !important;
         }
         .cv-button{
-            top:320px !important;
+            top: 360px !important;
         }
     }
     .project-img{
@@ -417,9 +418,9 @@ body{
     #home{
         margin-top:20vh !important;
     }
-    #angle-down{
-        display:none;
-    }
+    // #angle-down{
+    //     display:none;
+    // }
 }
 @media screen and (max-width:320px){
     .project-img{
