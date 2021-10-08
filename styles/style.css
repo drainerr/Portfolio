@@ -402,18 +402,18 @@ body #my-work #projects #projects-list .wrapper {
 
 body #contact {
   padding: 4em;
-  position: relative;
-  padding-bottom: 1em;
+  padding-bottom: 50px;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -443,38 +443,58 @@ body #contact .contact-nav li a:hover {
   color: white;
 }
 
-body #contact button {
+body #contact .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #contact .contacts button {
   padding: 5px;
-  width: 10em;
+  width: 8em;
   font-size: 1.1em;
   border-radius: 10px;
   border: none;
   color: white;
   font-weight: bold;
+  text-shadow: 1px 1px black;
   background-color: lightcoral;
   font-family: 'Open Sans', sans-serif;
 }
 
-body #contact button a {
+body #contact .contacts button a {
   color: white;
 }
 
-body #contact #contact-logos {
+body #contact .contacts button:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: crimson;
+}
+
+body #contact .contacts #contact-logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-body #contact #contact-logos li {
+body #contact .contacts #contact-logos li {
   padding: 5px;
 }
 
-body #contact #contact-logos li a {
+body #contact .contacts #contact-logos li a {
   color: lightcoral;
 }
 
-body #contact #contact-logos li:hover {
+body #contact .contacts #contact-logos li:hover {
   -webkit-transform: scale(1.15, 1.15);
           transform: scale(1.15, 1.15);
 }
