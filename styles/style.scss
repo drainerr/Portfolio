@@ -27,13 +27,13 @@ body{
                     font-size:24px;
                     margin-left:-10px;
                     &:hover{
-                        color:lightcoral;
+                        color:palevioletred;
                         transition: .5s;
                     }
                 }
             }
             #logo{      
-                font-size: 1.8em;
+                font-size: 2em;
                 font-family: 'Lobster', cursive;
                 padding-left:2vw;	
                 margin-left:15px;
@@ -49,11 +49,15 @@ body{
                             color:white;
                             font-family:"Poppins";
                             padding-left:3px;
+                            font-size:17px;
                             margin: auto 3px auto 3px;
                             &:hover{
-                                color:lightcoral;
+                                color:palevioletred;
                                 transition: .3s;
                             }
+                        }
+                        &:nth-last-child(1){
+                            padding-right:0;
                         }
                     }
                 }
@@ -75,14 +79,14 @@ body{
               span{
                 text-shadow: black 1px 1px 1px;
                 font-weight: bold;
-                color: lightcoral;
+                color: palevioletred;
               }
             }
         }
         #angle-down{
             color:white;
             margin-left:50%;
-            margin-top:25vh;
+            margin-top:30vh;
             &:hover{
                 cursor: pointer;
             }
@@ -110,6 +114,7 @@ body{
             max-width:400px;
             color:lavenderblush;
             font-weight: bold;
+            font-family: 'Cairo';
             font-size:1.5em;
             em{
                 color:lightcoral;
@@ -260,24 +265,24 @@ body{
                     button{
                         margin:20px;
                         margin-top:2.5em;
-                        padding:5px;
+                        padding:7px;
                         border-top-right-radius: 10px;
                         border-bottom-left-radius: 10px;
-                        border:solid salmon 3px;
+                        border:solid crimson 3px;
                         font-size:1em;
                         color:whitesmoke;
-                        background-color:rgb(165, 42, 42);
+                        background-color:crimson;
                         font-weight: bold;
-                        border:solid brown 3px;
                         transform: scale(1.1,1.1);
                         font-family: 'Open Sans', sans-serif;
                         a{
-                            color:wheat;
+                            color:white;
                             text-shadow: black 1px 1px;
                         }
                         &:hover{
                             border-radius:20px;
                             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                            transition: .5s
                         }
                     }
                 }
@@ -298,14 +303,20 @@ body{
         padding-bottom:50px;
         color: white;
         display:flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-direction: row-reverse;
         align-items: center;
         font-weight: bold;
+        box-shadow: rgba(255, 255, 255, .24) 0px -3px 3px;
         background-color: rgba(0,0,0,.2);
         font-family:'Open Sans', sans-serif;
-        
+        .footer-header{
+            font-size:24px;
+            padding-bottom:20px;
+            font-weight: bold;
+        }
         .contact-nav{
+            padding-right:50px;
             li{
                 margin:10px;
                 color:lightcoral;
@@ -356,6 +367,7 @@ body{
                     }
                     &:hover{
                         transform: scale(1.15,1.15);
+                        transition: .3s;
                     }
                 }
             }

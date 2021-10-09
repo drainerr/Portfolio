@@ -44,13 +44,13 @@ body header #upper .home-btn a {
 }
 
 body header #upper .home-btn a:hover {
-  color: lightcoral;
+  color: palevioletred;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 body header #upper #logo {
-  font-size: 1.8em;
+  font-size: 2em;
   font-family: 'Lobster', cursive;
   padding-left: 2vw;
   margin-left: 15px;
@@ -74,13 +74,18 @@ body header #upper nav ul li a {
   color: white;
   font-family: "Poppins";
   padding-left: 3px;
+  font-size: 17px;
   margin: auto 3px auto 3px;
 }
 
 body header #upper nav ul li a:hover {
-  color: lightcoral;
+  color: palevioletred;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+body header #upper nav ul li:nth-last-child(1) {
+  padding-right: 0;
 }
 
 body header #home {
@@ -103,13 +108,13 @@ body header #home p {
 body header #home p span {
   text-shadow: black 1px 1px 1px;
   font-weight: bold;
-  color: lightcoral;
+  color: palevioletred;
 }
 
 body header #angle-down {
   color: white;
   margin-left: 50%;
-  margin-top: 25vh;
+  margin-top: 30vh;
 }
 
 body header #angle-down:hover {
@@ -149,6 +154,7 @@ body #about p {
   max-width: 400px;
   color: lavenderblush;
   font-weight: bold;
+  font-family: 'Cairo';
   font-size: 1.5em;
 }
 
@@ -372,22 +378,21 @@ body #my-work #projects #projects-list .card .desc .techs .css {
 body #my-work #projects #projects-list .card button {
   margin: 20px;
   margin-top: 2.5em;
-  padding: 5px;
+  padding: 7px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  border: solid salmon 3px;
+  border: solid crimson 3px;
   font-size: 1em;
   color: whitesmoke;
-  background-color: brown;
+  background-color: crimson;
   font-weight: bold;
-  border: solid brown 3px;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   font-family: 'Open Sans', sans-serif;
 }
 
 body #my-work #projects #projects-list .card button a {
-  color: wheat;
+  color: white;
   text-shadow: black 1px 1px;
 }
 
@@ -395,6 +400,8 @@ body #my-work #projects #projects-list .card button:hover {
   border-radius: 20px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 body #my-work #projects #projects-list .wrapper {
@@ -414,9 +421,8 @@ body #contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -425,8 +431,20 @@ body #contact {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0px -3px 3px;
+          box-shadow: rgba(255, 255, 255, 0.24) 0px -3px 3px;
   background-color: rgba(0, 0, 0, 0.2);
   font-family: 'Open Sans', sans-serif;
+}
+
+body #contact .footer-header {
+  font-size: 24px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+body #contact .contact-nav {
+  padding-right: 50px;
 }
 
 body #contact .contact-nav li {
@@ -504,6 +522,8 @@ body #contact .contacts #contact-logos li a {
 body #contact .contacts #contact-logos li:hover {
   -webkit-transform: scale(1.15, 1.15);
           transform: scale(1.15, 1.15);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 body .credits {
