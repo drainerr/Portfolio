@@ -11,16 +11,17 @@ body {
   color: white;
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
+  overflow-x: hidden;
 }
 
-body header {
+body main {
   max-height: 100vh;
   height: 100vh;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
 }
 
-body header #upper {
+body main #upper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,43 +34,43 @@ body header #upper {
   padding: 1.5em;
 }
 
-body header #upper .home-btn {
+body main #upper .home-btn {
   position: fixed;
   z-index: 2;
 }
 
-body header #upper .home-btn a {
+body main #upper .home-btn a {
   font-size: 24px;
   margin-left: -10px;
 }
 
-body header #upper .home-btn a:hover {
+body main #upper .home-btn a:hover {
   color: palevioletred;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-body header #upper #logo {
+body main #upper #logo {
   font-size: 2em;
   font-family: 'Lobster', cursive;
   padding-left: 2vw;
   margin-left: 15px;
 }
 
-body header #upper nav ul {
+body main #upper nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header #upper nav ul li {
+body main #upper nav ul li {
   padding-right: 2.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header #upper nav ul li a {
+body main #upper nav ul li a {
   font-weight: bold;
   color: white;
   font-family: "Poppins";
@@ -78,17 +79,17 @@ body header #upper nav ul li a {
   margin: auto 3px auto 3px;
 }
 
-body header #upper nav ul li a:hover {
+body main #upper nav ul li a:hover {
   color: palevioletred;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-body header #upper nav ul li:nth-last-child(1) {
+body main #upper nav ul li:nth-last-child(1) {
   padding-right: 0;
 }
 
-body header #home {
+body main #home {
   text-align: center;
   margin-top: 30vh;
   font-weight: bold;
@@ -96,29 +97,97 @@ body header #home {
   text-shadow: black 1px 1px 1px;
 }
 
-body header #home h1 {
+body main #home h1 {
   font-size: 2.2em;
+  -webkit-animation: headerAnimation 3s;
+          animation: headerAnimation 3s;
 }
 
-body header #home p {
+@-webkit-keyframes headerAnimation {
+  from {
+    -webkit-transform: translateX(-100%) rotateY(-360deg);
+            transform: translateX(-100%) rotateY(-360deg);
+  }
+  to {
+    -webkit-transform: translateX(0%) rotateY(0deg);
+            transform: translateX(0%) rotateY(0deg);
+  }
+}
+
+@keyframes headerAnimation {
+  from {
+    -webkit-transform: translateX(-100%) rotateY(-360deg);
+            transform: translateX(-100%) rotateY(-360deg);
+  }
+  to {
+    -webkit-transform: translateX(0%) rotateY(0deg);
+            transform: translateX(0%) rotateY(0deg);
+  }
+}
+
+body main #home p {
   font-size: 1.5em;
   padding-top: .7em;
+  -webkit-animation: paragraphAnimation 3s;
+          animation: paragraphAnimation 3s;
 }
 
-body header #home p span {
+@-webkit-keyframes paragraphAnimation {
+  from {
+    -webkit-transform: translateX(100%) rotateY(-360deg);
+            transform: translateX(100%) rotateY(-360deg);
+  }
+  to {
+    -webkit-transform: translateX(0) rotateY(0deg);
+            transform: translateX(0) rotateY(0deg);
+  }
+}
+
+@keyframes paragraphAnimation {
+  from {
+    -webkit-transform: translateX(100%) rotateY(-360deg);
+            transform: translateX(100%) rotateY(-360deg);
+  }
+  to {
+    -webkit-transform: translateX(0) rotateY(0deg);
+            transform: translateX(0) rotateY(0deg);
+  }
+}
+
+body main #home p span {
   text-shadow: black 1px 1px 1px;
   font-weight: bold;
   color: palevioletred;
 }
 
-body header #angle-down {
-  color: white;
+body main .arrow {
   margin-left: 50%;
-  margin-top: 30vh;
+  margin-top: 20vh;
 }
 
-body header #angle-down:hover {
-  cursor: pointer;
+body main .arrow a #angle-down {
+  color: white;
+  font-size: 4em;
+  -webkit-animation: moveDownArrow 1.5s infinite;
+          animation: moveDownArrow 1.5s infinite;
+}
+
+@-webkit-keyframes moveDownArrow {
+  100% {
+    -webkit-transform: translate(0, 70px);
+            transform: translate(0, 70px);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+}
+
+@keyframes moveDownArrow {
+  100% {
+    -webkit-transform: translate(0, 70px);
+            transform: translate(0, 70px);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
 }
 
 body #about {
