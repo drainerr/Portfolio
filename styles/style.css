@@ -98,7 +98,7 @@ body main #home {
 }
 
 body main #home h1 {
-  font-size: 2.2em;
+  font-size: 2.5em;
   -webkit-animation: headerAnimation 3s;
           animation: headerAnimation 3s;
 }
@@ -128,8 +128,8 @@ body main #home h1 {
 body main #home p {
   font-size: 1.5em;
   padding-top: .7em;
-  -webkit-animation: paragraphAnimation 3s;
-          animation: paragraphAnimation 3s;
+  -webkit-animation: paragraphAnimation 5s;
+          animation: paragraphAnimation 5s;
 }
 
 @-webkit-keyframes paragraphAnimation {
@@ -168,16 +168,14 @@ body main .arrow {
 body main .arrow a #angle-down {
   color: white;
   font-size: 4em;
-  -webkit-animation: moveDownArrow 1.5s infinite;
-          animation: moveDownArrow 1.5s infinite;
+  -webkit-animation: moveDownArrow 2s infinite;
+          animation: moveDownArrow 2s infinite;
 }
 
 @-webkit-keyframes moveDownArrow {
   100% {
     -webkit-transform: translate(0, 70px);
             transform: translate(0, 70px);
-    -webkit-transition: 1s;
-    transition: 1s;
   }
 }
 
@@ -185,8 +183,6 @@ body main .arrow a #angle-down {
   100% {
     -webkit-transform: translate(0, 70px);
             transform: translate(0, 70px);
-    -webkit-transition: 1s;
-    transition: 1s;
   }
 }
 
@@ -359,8 +355,10 @@ body #my-work #projects #projects-list .card .project-img img:hover {
   cursor: pointer;
   -webkit-animation: skew 1s;
           animation: skew 1s;
-  -webkit-transition: ease-out;
-  transition: ease-out;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+  -webkit-transition-delay: .7s;
+          transition-delay: .7s;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   -webkit-box-shadow: 1px 1px 5px 1px black;
@@ -609,6 +607,9 @@ body .credits {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #upper #logo {
+    font-size: 2.5em !important;
   }
   #upper ul {
     padding-top: 2em;

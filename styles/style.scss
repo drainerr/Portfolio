@@ -71,7 +71,7 @@ body{
            font-family: 'Poppins';
            text-shadow: black 1px 1px 1px;
             h1{
-                font-size:2.2em;
+                font-size:2.5em;
                 animation: headerAnimation 3s;
                 @keyframes headerAnimation {
                     from{
@@ -87,7 +87,7 @@ body{
             p{
                 font-size:1.5em;
                 padding-top:.7em;
-                animation: paragraphAnimation 3s;
+                animation: paragraphAnimation 5s;
                 @keyframes paragraphAnimation {
                     from{
                         transform: translateX(100%) rotateY(-360deg);
@@ -112,11 +112,10 @@ body{
                 #angle-down{
                     color:white;
                     font-size:4em;
-                    animation: moveDownArrow 1.5s infinite;      
+                    animation: moveDownArrow 2s infinite;      
                     @keyframes moveDownArrow {
                         100%{
                             transform:translate(0,70px);
-                            transition:1s;
                         }
                     }
                 }
@@ -241,7 +240,8 @@ body{
                                 cursor:pointer;
                                 // filter:contrast(90%);
                                 animation:skew 1s;
-                                transition:ease-out;
+                                animation-delay: .7s;
+                                transition-delay:.7s;
                                 transform:scale(1.1,1.1);
                                 box-shadow: 1px 1px 5px 1px black;
                             }
@@ -416,6 +416,9 @@ body{
 @media screen and (max-width: 769px){
     #upper{
         flex-direction: column;
+        #logo{
+            font-size:2.5em !important;
+        }
         ul{
             padding-top:2em;
             &:nth-child(1){
