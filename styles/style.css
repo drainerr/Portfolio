@@ -145,7 +145,8 @@ body #about {
 body #about img {
   width: 15em;
   height: 15em;
-  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10%;
   -webkit-box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 5px;
           box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 5px;
 }
@@ -197,7 +198,7 @@ body #about .about-me .cv-button button:hover {
 
 body #my-work {
   padding: 4em;
-  margin-top: 9em;
+  margin-top: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,7 +416,7 @@ body #my-work #projects #projects-list .wrapper {
 }
 
 body #contact {
-  padding: 4em;
+  padding-top: 4em;
   padding-bottom: 50px;
   color: white;
   display: -webkit-box;
@@ -449,7 +450,7 @@ body #contact .contact-nav {
 
 body #contact .contact-nav li {
   margin: 10px;
-  color: lightcoral;
+  color: palevioletred;
 }
 
 body #contact .contact-nav li:nth-child(1) {
@@ -458,7 +459,7 @@ body #contact .contact-nav li:nth-child(1) {
 
 body #contact .contact-nav li a {
   font-size: 20px;
-  color: lightcoral;
+  color: palevioletred;
   font-family: 'Poppins';
 }
 
@@ -490,7 +491,7 @@ body #contact .contacts button {
   color: white;
   font-weight: bold;
   text-shadow: 1px 1px black;
-  background-color: lightcoral;
+  background-color: palevioletred;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -516,7 +517,7 @@ body #contact .contacts #contact-logos li {
 }
 
 body #contact .contacts #contact-logos li a {
-  color: lightcoral;
+  color: palevioletred;
 }
 
 body #contact .contacts #contact-logos li:hover {
@@ -558,6 +559,7 @@ body .credits {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 14em !important;
   }
   #about p {
     max-width: 90vw !important;
@@ -565,6 +567,9 @@ body .credits {
     width: 20rem !important;
     margin-top: 2em;
     margin-left: 50px !important;
+  }
+  #about img {
+    border-radius: 50% !important;
   }
   #about .cv-button {
     top: 360px !important;
@@ -611,9 +616,11 @@ body .credits {
     display: none;
   }
   #contact {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  #contact .contact-nav {
+    padding-right: 0 !important;
   }
 }
 
