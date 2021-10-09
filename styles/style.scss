@@ -89,18 +89,22 @@ body{
         }
     }
     #about{
-        padding-top:10em;
+        padding-top:8em;
         padding-bottom: 10em;
+        margin-top:5em;
         display:flex;
         width:100%;
         position:relative;
         align-items: center;
+        box-shadow: rgba(255, 255, 255, 0.24) 0px 0px 8px;
         justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, .1);
         font-family: 'Open Sans', sans-serif;
         img{
             width:15em;
             height:15em;
-            border-radius:50%;     
+            border-radius:50%;  
+            box-shadow: rgba(255, 255, 255,  .35) 0px 0px 5px;   
         }
         p{
             max-width:400px;
@@ -128,7 +132,7 @@ body{
                     border-radius:5px;
                     &:hover{
                         cursor: pointer;
-                        background-color: salmon;
+                        background-color: palevioletred;
                         color:black;
                         transition:.5s;
                     }
@@ -139,6 +143,7 @@ body{
     }
     #my-work{
         padding:4em;
+        margin-top:9em;
         display:flex;
         flex-direction: column;
         align-items: center;
