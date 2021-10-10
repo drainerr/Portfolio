@@ -72,14 +72,16 @@ body{
            text-shadow: black 1px 1px 1px;
             h1{
                 font-size:2.5em;
-                animation: headerAnimation 3s;
+                animation: ease-out headerAnimation 2s;
                 @keyframes headerAnimation {
                     from{
-                        transform: translateX(-100%) rotateY(-360deg);
+                        transform: translateX(-50%);
+                        opacity: 0;
                   
                     }
                     to{
                         transform: translateX(0%) rotateY(0deg);
+                        opacity: 1;
                         
                     }
                 }
@@ -87,14 +89,16 @@ body{
             p{
                 font-size:1.5em;
                 padding-top:.7em;
-                animation: paragraphAnimation 5s;
+                animation: ease-out paragraphAnimation 2s;
                 @keyframes paragraphAnimation {
                     from{
-                        transform: translateX(100%) rotateY(-360deg);
+                        transform: translateX(50%);
+                        opacity: 0;
 
                     }
                     to{
-                        transform: translateX(0) rotateY(0deg);
+                        transform: translateY(0%) rotateY(0deg);
+                        opacity: 1;
 
                     } 
                 }
@@ -112,8 +116,9 @@ body{
                 #angle-down{
                     color:white;
                     font-size:4em;
-                    animation: moveDownArrow 2s infinite;      
-                    @keyframes moveDownArrow {
+                    animation: moveDown 1.8s infinite;      
+                    animation-delay: 2s;
+                    @keyframes moveDown{
                         100%{
                             transform:translate(0,70px);
                         }
@@ -223,7 +228,7 @@ body{
                         color:white;
                         text-shadow:1px 1px 1px black;
                         padding-bottom:1.5em;
-                        font-size:2em;
+                        font-size:2.5em;
                         max-width:25vw;
                         font-weight: normal;
                         font-family: 'Lobster';
@@ -297,7 +302,7 @@ body{
                     button{
                         margin:20px;
                         margin-top:2.5em;
-                        padding:7px;
+                        padding: 4px 7px;
                         border-top-right-radius: 10px;
                         border-bottom-left-radius: 10px;
                         border:solid crimson 3px;
