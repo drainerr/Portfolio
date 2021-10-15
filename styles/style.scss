@@ -16,7 +16,7 @@ body{
         height:100vh;
         width:100%;
         font-family: 'Open Sans', sans-serif;
-        #upper{
+        .upper{
             display:flex;
             justify-content:space-between;
             align-items: center;
@@ -33,7 +33,7 @@ body{
                     }
                 }
             }
-            #logo{      
+            .logo{      
                 font-size: 2em;
                 font-family: 'Lobster', cursive;
                 padding-left:2vw;	
@@ -64,7 +64,7 @@ body{
                 }
             }
         }
-        #home{
+        .home{
            text-align: center;
            margin-top:30vh;
            font-weight: bold;
@@ -127,7 +127,7 @@ body{
             }
         }         
     }
-    #about{
+    .about{
         padding-top:8em;
         padding-bottom: 10em;
         margin-top:5em;
@@ -182,7 +182,7 @@ body{
             }
         }
     }
-    #my-work{
+    .my-work{
         padding:4em;
         margin-top:5em;
         display:flex;
@@ -200,8 +200,8 @@ body{
         .more-less-symbols{
             font-size:50px;
         }
-        #projects{
-            #projects-list{
+        .projects{
+            .projects-list{
                 margin-top:2em;
                 display:flex;
                 align-items:center;
@@ -335,7 +335,7 @@ body{
             }
         }
     }
-    #contact{
+    .contact{
         padding-top:4em;
         padding-bottom:50px;
         color: white;
@@ -394,7 +394,7 @@ body{
                     background-color: crimson;
                 }
             }
-            #contact-logos{
+            .contact-logos{
                 display:flex;
                 margin-bottom:1em;
                 li{
@@ -419,9 +419,9 @@ body{
 }
 
 @media screen and (max-width: 769px){
-    #upper{
+    .upper{
         flex-direction: column;
-        #logo{
+        .logo{
             font-size:2.5em !important;
         }
         ul{
@@ -435,11 +435,11 @@ body{
         // left:20px;
         display:none;
     }
-    #home{
+    .home{
         margin-top:25vh !important;
         font-size: 0.8em;
     }
-    #about{
+    .about{
         flex-direction: column;
         padding-bottom:14em !important;
         p{
@@ -481,7 +481,7 @@ body{
     .techs{
         padding:0 !important;
     }
-    #my-work{
+    .my-work{
         padding:0;
         overflow:hidden;
         padding:3em !important;
@@ -495,7 +495,7 @@ body{
             display:none;
         }
     }
-    #contact{
+    .contact{
         justify-content: space-around !important;
         .contact-nav{
             padding-right: 0 !important;
@@ -505,10 +505,10 @@ body{
 
 }
 @media screen and (max-height: 610px){
-    #home{
+    .home{
         margin-top:20vh !important;
     }
-    // #angle-down{
+    // .angle-down{
     //     display:none;
     // }
 }
@@ -529,10 +529,10 @@ body{
             }
         }
     }
-    #home{
+    .home{
         margin-top:12vh !important;
     }
-    #my-work{
+    .my-work{
         h1{
             font-size:1.7em;
             .more-less-symbols{
