@@ -127,7 +127,7 @@ body{
             }
         }         
     }
-    .about{
+    #about{
         padding-top:8em;
         padding-bottom: 10em;
         margin-top:5em;
@@ -182,7 +182,7 @@ body{
             }
         }
     }
-    .my-work{
+    #my-work{
         padding:4em;
         margin-top:5em;
         display:flex;
@@ -335,7 +335,7 @@ body{
             }
         }
     }
-    .contact{
+    #contact{
         padding-top:4em;
         padding-bottom:50px;
         color: white;
@@ -371,7 +371,7 @@ body{
                 }
             }
         }
-        .contacts{
+        #contacts{
             display:flex;
             flex-direction: column-reverse;
             align-items: center;
@@ -439,7 +439,7 @@ body{
         margin-top:25vh !important;
         font-size: 0.8em;
     }
-    .about{
+    #about{
         flex-direction: column;
         padding-bottom:14em !important;
         p{
@@ -481,7 +481,7 @@ body{
     .techs{
         padding:0 !important;
     }
-    .my-work{
+    #my-work{
         padding:0;
         overflow:hidden;
         padding:3em !important;
@@ -495,7 +495,7 @@ body{
             display:none;
         }
     }
-    .contact{
+    #contact{
         justify-content: space-around !important;
         .contact-nav{
             padding-right: 0 !important;
@@ -532,7 +532,7 @@ body{
     .home{
         margin-top:12vh !important;
     }
-    .my-work{
+    #my-work{
         h1{
             font-size:1.7em;
             .more-less-symbols{

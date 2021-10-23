@@ -196,7 +196,7 @@ body main .arrow a #angle-down {
   }
 }
 
-body .about {
+body #about {
   padding-top: 8em;
   padding-bottom: 10em;
   margin-top: 5em;
@@ -217,7 +217,7 @@ body .about {
   font-family: 'Open Sans', sans-serif;
 }
 
-body .about img {
+body #about img {
   width: 15em;
   height: 15em;
   background-color: rgba(0, 0, 0, 0.15);
@@ -226,7 +226,7 @@ body .about img {
           box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 5px;
 }
 
-body .about p {
+body #about p {
   max-width: 400px;
   color: lavenderblush;
   font-weight: bold;
@@ -234,11 +234,11 @@ body .about p {
   font-size: 1.5em;
 }
 
-body .about p em {
+body #about p em {
   color: lightcoral;
 }
 
-body .about .about-me {
+body #about .about-me {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,12 +248,12 @@ body .about .about-me {
           justify-content: center;
 }
 
-body .about .about-me .cv-button {
+body #about .about-me .cv-button {
   position: absolute;
   top: 230px;
 }
 
-body .about .about-me .cv-button button {
+body #about .about-me .cv-button button {
   font-family: 'Cairo';
   border: none;
   outline-offset: none;
@@ -263,7 +263,7 @@ body .about .about-me .cv-button button {
   border-radius: 5px;
 }
 
-body .about .about-me .cv-button button:hover {
+body #about .about-me .cv-button button:hover {
   cursor: pointer;
   background-color: palevioletred;
   color: black;
@@ -271,7 +271,7 @@ body .about .about-me .cv-button button:hover {
   transition: .5s;
 }
 
-body .my-work {
+body #my-work {
   padding: 4em;
   margin-top: 5em;
   display: -webkit-box;
@@ -287,7 +287,7 @@ body .my-work {
   font-family: 'Open Sans', sans-serif;
 }
 
-body .my-work h1 {
+body #my-work h1 {
   font-size: 2.5em;
   color: white;
   text-shadow: 1px 1px 1px black;
@@ -296,11 +296,11 @@ body .my-work h1 {
   margin-bottom: 1em;
 }
 
-body .my-work .more-less-symbols {
+body #my-work .more-less-symbols {
   font-size: 50px;
 }
 
-body .my-work .projects .projects-list {
+body #my-work .projects .projects-list {
   margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,7 +316,7 @@ body .my-work .projects .projects-list {
   max-width: 90vw;
 }
 
-body .my-work .projects .projects-list .card {
+body #my-work .projects .projects-list .card {
   max-width: 100vw;
   width: auto;
   display: -webkit-box;
@@ -332,16 +332,16 @@ body .my-work .projects .projects-list .card {
           justify-content: space-between;
 }
 
-body .my-work .projects .projects-list .card:nth-last-child(1) {
+body #my-work .projects .projects-list .card:nth-last-child(1) {
   margin-bottom: 5em;
 }
 
-body .my-work .projects .projects-list .card:hover {
+body #my-work .projects .projects-list .card:hover {
   background-color: rgba(184, 103, 103, 0.178);
   border-radius: 20px;
 }
 
-body .my-work .projects .projects-list .card h2 {
+body #my-work .projects .projects-list .card h2 {
   color: white;
   text-shadow: 1px 1px 1px black;
   padding-bottom: 1.5em;
@@ -352,7 +352,7 @@ body .my-work .projects .projects-list .card h2 {
   text-align: center;
 }
 
-body .my-work .projects .projects-list .card .project-img img {
+body #my-work .projects .projects-list .card .project-img img {
   width: 450px;
   height: 400px;
   border-radius: 10px;
@@ -361,7 +361,7 @@ body .my-work .projects .projects-list .card .project-img img {
           box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-body .my-work .projects .projects-list .card .project-img img:hover {
+body #my-work .projects .projects-list .card .project-img img:hover {
   cursor: pointer;
   -webkit-animation: skew 1s;
           animation: skew 1s;
@@ -397,7 +397,7 @@ body .my-work .projects .projects-list .card .project-img img:hover {
   }
 }
 
-body .my-work .projects .projects-list .card .desc {
+body #my-work .projects .projects-list .card .desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +411,7 @@ body .my-work .projects .projects-list .card .desc {
   margin-left: 2em;
 }
 
-body .my-work .projects .projects-list .card .desc .techs {
+body #my-work .projects .projects-list .card .desc .techs {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,7 +424,7 @@ body .my-work .projects .projects-list .card .desc .techs {
   min-width: 25vw;
 }
 
-body .my-work .projects .projects-list .card .desc .techs .html {
+body #my-work .projects .projects-list .card .desc .techs .html {
   background-color: orangered;
   width: auto;
   padding: 10px;
@@ -432,28 +432,28 @@ body .my-work .projects .projects-list .card .desc .techs .html {
   margin: 2px;
 }
 
-body .my-work .projects .projects-list .card .desc .techs .scss {
+body #my-work .projects .projects-list .card .desc .techs .scss {
   background-color: palevioletred;
   padding: 10px;
   border-radius: 5px;
   margin: 2px;
 }
 
-body .my-work .projects .projects-list .card .desc .techs .js {
+body #my-work .projects .projects-list .card .desc .techs .js {
   background-color: gold;
   padding: 10px;
   border-radius: 5px;
   margin: 2px;
 }
 
-body .my-work .projects .projects-list .card .desc .techs .css {
+body #my-work .projects .projects-list .card .desc .techs .css {
   background-color: cornflowerblue;
   padding: 10px;
   border-radius: 5px;
   margin: 2px;
 }
 
-body .my-work .projects .projects-list .card button {
+body #my-work .projects .projects-list .card button {
   margin: 20px;
   margin-top: 2.5em;
   padding: 4px 7px;
@@ -469,12 +469,12 @@ body .my-work .projects .projects-list .card button {
   font-family: 'Open Sans', sans-serif;
 }
 
-body .my-work .projects .projects-list .card button a {
+body #my-work .projects .projects-list .card button a {
   color: white;
   text-shadow: black 1px 1px;
 }
 
-body .my-work .projects .projects-list .card button:hover {
+body #my-work .projects .projects-list .card button:hover {
   border-radius: 20px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -482,7 +482,7 @@ body .my-work .projects .projects-list .card button:hover {
   transition: .5s;
 }
 
-body .my-work .projects .projects-list .wrapper {
+body #my-work .projects .projects-list .wrapper {
   width: 70vw;
   margin: 2em auto 2em auto;
   height: 7px;
@@ -492,7 +492,7 @@ body .my-work .projects .projects-list .wrapper {
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-body .contact {
+body #contact {
   padding-top: 4em;
   padding-bottom: 50px;
   color: white;
@@ -515,38 +515,38 @@ body .contact {
   font-family: 'Open Sans', sans-serif;
 }
 
-body .contact .footer-header {
+body #contact .footer-header {
   font-size: 24px;
   padding-bottom: 20px;
   font-weight: bold;
 }
 
-body .contact .contact-nav {
+body #contact .contact-nav {
   padding-right: 50px;
 }
 
-body .contact .contact-nav li {
+body #contact .contact-nav li {
   margin: 10px;
   color: palevioletred;
 }
 
-body .contact .contact-nav li:nth-child(1) {
+body #contact .contact-nav li:nth-child(1) {
   margin-top: 0;
 }
 
-body .contact .contact-nav li a {
+body #contact .contact-nav li a {
   font-size: 20px;
   color: palevioletred;
   font-family: 'Poppins';
 }
 
-body .contact .contact-nav li a:hover {
+body #contact .contact-nav li a:hover {
   -webkit-transition: .3s;
   transition: .3s;
   color: white;
 }
 
-body .contact .contacts {
+body #contact #contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,7 +559,7 @@ body .contact .contacts {
           align-items: center;
 }
 
-body .contact .contacts button {
+body #contact #contacts button {
   padding: 5px;
   width: 8em;
   font-size: 1.1em;
@@ -572,32 +572,32 @@ body .contact .contacts button {
   font-family: 'Open Sans', sans-serif;
 }
 
-body .contact .contacts button a {
+body #contact #contacts button a {
   color: white;
 }
 
-body .contact .contacts button:hover {
+body #contact #contacts button:hover {
   -webkit-transition: .5s;
   transition: .5s;
   background-color: crimson;
 }
 
-body .contact .contacts .contact-logos {
+body #contact #contacts .contact-logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1em;
 }
 
-body .contact .contacts .contact-logos li {
+body #contact #contacts .contact-logos li {
   padding: 5px;
 }
 
-body .contact .contacts .contact-logos li a {
+body #contact #contacts .contact-logos li a {
   color: palevioletred;
 }
 
-body .contact .contacts .contact-logos li:hover {
+body #contact #contacts .contact-logos li:hover {
   -webkit-transform: scale(1.15, 1.15);
           transform: scale(1.15, 1.15);
   -webkit-transition: .3s;
@@ -634,24 +634,24 @@ body .credits {
     margin-top: 25vh !important;
     font-size: 0.8em;
   }
-  .about {
+  #about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 14em !important;
   }
-  .about p {
+  #about p {
     max-width: 90vw !important;
     font-size: 1.5em !important;
     width: 20rem !important;
     margin-top: 2em;
     margin-left: 50px !important;
   }
-  .about img {
+  #about img {
     border-radius: 50% !important;
   }
-  .about .cv-button {
+  #about .cv-button {
     top: 360px !important;
   }
   .project-img img {
@@ -681,25 +681,25 @@ body .credits {
   .techs {
     padding: 0 !important;
   }
-  .my-work {
+  #my-work {
     padding: 0;
     overflow: hidden;
     padding: 3em !important;
   }
-  .my-work h1 {
+  #my-work h1 {
     font-size: 2.2em !important;
   }
-  .my-work h1 .more-less-symbols {
+  #my-work h1 .more-less-symbols {
     font-size: 40px;
   }
-  .my-work button {
+  #my-work button {
     display: none;
   }
-  .contact {
+  #contact {
     -ms-flex-pack: distribute !important;
         justify-content: space-around !important;
   }
-  .contact .contact-nav {
+  #contact .contact-nav {
     padding-right: 0 !important;
   }
 }
@@ -729,13 +729,13 @@ body .credits {
   .home {
     margin-top: 12vh !important;
   }
-  .my-work h1 {
+  #my-work h1 {
     font-size: 1.7em;
   }
-  .my-work h1 .more-less-symbols {
+  #my-work h1 .more-less-symbols {
     font-size: 35px;
   }
-  .my-work .desc h2 {
+  #my-work .desc h2 {
     font-size: 1.5em;
   }
 }
