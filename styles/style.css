@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  -webkit-transition: all 0.3s 0s linear;
+  transition: all 0.3s 0s linear;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -105,32 +110,38 @@ body main .home h1 {
 
 @-webkit-keyframes headerAnimation {
   from {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-50%) scale(0.1);
+            transform: translateX(-50%) scale(0.1);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateX(0%) rotateY(0deg);
-            transform: translateX(0%) rotateY(0deg);
+    -webkit-transform: translateX(0%) rotateY(0deg) scale(1);
+            transform: translateX(0%) rotateY(0deg) scale(1);
     opacity: 1;
   }
 }
 
 @keyframes headerAnimation {
   from {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-50%) scale(0.1);
+            transform: translateX(-50%) scale(0.1);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateX(0%) rotateY(0deg);
-            transform: translateX(0%) rotateY(0deg);
+    -webkit-transform: translateX(0%) rotateY(0deg) scale(1);
+            transform: translateX(0%) rotateY(0deg) scale(1);
     opacity: 1;
   }
 }
 
+body main .home h1 .empName {
+  text-shadow: black 1px 1px 1px;
+  font-weight: bold;
+  color: palevioletred;
+}
+
 body main .home p {
-  font-size: 1.7em;
+  font-size: 2.3em;
   padding-top: .7em;
   -webkit-animation: ease-out paragraphAnimation 2s;
           animation: ease-out paragraphAnimation 2s;
@@ -138,34 +149,28 @@ body main .home p {
 
 @-webkit-keyframes paragraphAnimation {
   from {
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    -webkit-transform: translateX(50%) scale(0.1);
+            transform: translateX(50%) scale(0.1);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0%) rotateY(0deg);
-            transform: translateY(0%) rotateY(0deg);
+    -webkit-transform: translateY(0%) rotateY(0deg) scale(1);
+            transform: translateY(0%) rotateY(0deg) scale(1);
     opacity: 1;
   }
 }
 
 @keyframes paragraphAnimation {
   from {
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    -webkit-transform: translateX(50%) scale(0.1);
+            transform: translateX(50%) scale(0.1);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0%) rotateY(0deg);
-            transform: translateY(0%) rotateY(0deg);
+    -webkit-transform: translateY(0%) rotateY(0deg) scale(1);
+            transform: translateY(0%) rotateY(0deg) scale(1);
     opacity: 1;
   }
-}
-
-body main .home p span {
-  text-shadow: black 1px 1px 1px;
-  font-weight: bold;
-  color: palevioletred;
 }
 
 body main .arrow {
@@ -176,23 +181,23 @@ body main .arrow {
 body main .arrow a #angle-down {
   color: white;
   font-size: 4em;
-  -webkit-animation: moveDown 1.8s infinite;
-          animation: moveDown 1.8s infinite;
+  -webkit-animation: moveDown 2.5s infinite;
+          animation: moveDown 2.5s infinite;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
 @-webkit-keyframes moveDown {
   100% {
-    -webkit-transform: translate(0, 70px);
-            transform: translate(0, 70px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
 }
 
 @keyframes moveDown {
   100% {
-    -webkit-transform: translate(0, 70px);
-            transform: translate(0, 70px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
 }
 

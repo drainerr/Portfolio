@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    transition: all 0.3s 0s linear;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -75,38 +78,38 @@ body{
                 animation: ease-out headerAnimation 2s;
                 @keyframes headerAnimation {
                     from{
-                        transform: translateX(-50%);
+                        transform: translateX(-50%) scale(.1);
                         opacity: 0;
                   
                     }
                     to{
-                        transform: translateX(0%) rotateY(0deg);
+                        transform: translateX(0%) rotateY(0deg) scale(1);
                         opacity: 1;
                         
                     }
                 }
+                .empName{
+                    text-shadow: black 1px 1px 1px;
+                    font-weight: bold;
+                    color: palevioletred;
+                  }
             }
             p{
-                font-size:1.7em;
+                font-size:2.3em;
                 padding-top:.7em;
                 animation: ease-out paragraphAnimation 2s;
                 @keyframes paragraphAnimation {
                     from{
-                        transform: translateX(50%);
+                        transform: translateX(50%) scale(0.1);
                         opacity: 0;
 
                     }
                     to{
-                        transform: translateY(0%) rotateY(0deg);
+                        transform: translateY(0%) rotateY(0deg) scale(1);
                         opacity: 1;
 
                     } 
                 }
-              span{
-                text-shadow: black 1px 1px 1px;
-                font-weight: bold;
-                color: palevioletred;
-              }
             }
         }
         .arrow{
@@ -116,11 +119,11 @@ body{
                 #angle-down{
                     color:white;
                     font-size:4em;
-                    animation: moveDown 1.8s infinite;      
+                    animation: moveDown 2.5s infinite;      
                     animation-delay: 2s;
                     @keyframes moveDown{
                         100%{
-                            transform:translate(0,70px);
+                            transform:translate(0,50px);
                         }
                     }
                 }
