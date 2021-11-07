@@ -9,7 +9,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(../images/endless-constellation.svg);
+    background-color:#F9F4E6;
+    background-image: url(../images/bg.svg);
     color:white;
     font-family: 'Open Sans', sans-serif;
     height:100vh;
@@ -24,11 +25,14 @@ body{
             justify-content:space-between;
             align-items: center;
             padding:1.5em;
+            background-color:rgba(0,0,0,0.8);
             .home-btn{
                 position:fixed;
                 z-index:2;
                 a{
+                    color:gray;
                     font-size:24px;
+                    text-shadow:1px 0px black;
                     margin-left:-10px;
                     &:hover{
                         color:palevioletred;
@@ -41,6 +45,7 @@ body{
                 font-family: 'Lobster', cursive;
                 padding-left:2vw;	
                 margin-left:15px;
+                color:darkgray;
             }
             nav{
                 ul{
@@ -48,9 +53,12 @@ body{
                     li{
                         padding-right:2.5vw;
                         display:flex;
+                        i{
+                            color:gray;
+                        }
                         a{
                             font-weight: bold;
-                            color:white;
+                            color:darkgray;
                             font-family:"Poppins";
                             padding-left:3px;
                             font-size:17px;
@@ -70,6 +78,7 @@ body{
         .home{
            text-align: center;
            margin-top:30vh;
+           color:gray;
            font-weight: bold;
            font-family: 'Poppins';
            text-shadow: black 1px 1px 1px;
@@ -114,16 +123,20 @@ body{
         }
         .arrow{
             margin-left:50%;
-            margin-top:20vh;
-            a{
+            margin-top:15vh;
+            display:flex;
+            flex-direction: column;
+            a{  
                 #angle-down{
-                    color:white;
+                    color:gray;
                     font-size:4em;
-                    animation: moveDown 2.5s infinite;      
+                    animation: moveDown 2s 3;    
                     animation-delay: 2s;
+                    text-shadow:1px 1px black;
                     @keyframes moveDown{
                         100%{
-                            transform:translate(0,50px);
+                            transform:translate(0,70px);
+                            transition: linear;
                         }
                     }
                 }
@@ -140,7 +153,7 @@ body{
         align-items: center;
         box-shadow: rgba(255, 255, 255, 0.24) 0px 0px 8px;
         justify-content: space-evenly;
-        background-color: rgba(0, 0, 0, .1);
+        background-color: rgba(0, 0, 0, .8);
         font-family: 'Open Sans', sans-serif;
         img{
             width:15em;
@@ -187,14 +200,14 @@ body{
     }
     #my-work{
         padding:4em;
-        margin-top:5em;
         display:flex;
         flex-direction: column;
         align-items: center;
         font-family: 'Open Sans', sans-serif;
+        background-color:rgba(255,255,255,.4);
         h1{
             font-size: 2.5em;
-            color:white;
+            color:gray;
             text-shadow:1px 1px 1px black;
             font-family: 'Cairo';
             font-weight: bold;
@@ -216,19 +229,18 @@ body{
                     width:auto;
                     display:flex;
                     align-items: center;
-                    padding:1vw;
+                    padding:10vh 3vw 10vh 3vw;
                     margin:2em;
                     justify-content: space-between;
                     &:nth-last-child(1){
                         margin-bottom:5em;
                     }
                     &:hover{
-                        background-color: rgba(184, 103, 103, 0.178);
+                        background-color: rgba(0, 0, 0, 0.8);
                         border-radius:20px;
-
                     }
                     h2{
-                        color:white;
+                        color:gray;
                         text-shadow:1px 1px 1px black;
                         padding-bottom:1.5em;
                         font-size:2.5em;
@@ -304,20 +316,20 @@ body{
                     }
                     button{
                         margin:20px;
-                        margin-top:2.5em;
                         padding: 4px 7px;
                         border-top-right-radius: 10px;
                         border-bottom-left-radius: 10px;
                         border:solid crimson 3px;
                         font-size:1em;
                         color:whitesmoke;
+                        width:50%;
                         background-color:crimson;
                         font-weight: bold;
                         transform: scale(1.1,1.1);
                         font-family: 'Open Sans', sans-serif;
                         a{
                             color:white;
-                            text-shadow: black 1px 1px;
+                            text-shadow: brown 2px 2px;
                         }
                         &:hover{
                             border-radius:20px;
@@ -332,7 +344,7 @@ body{
                     height:7px;
                     border-radius:20px;
                     background-color:rgba(255, 255, 255, 0.534);
-                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
                     // display:none;
                 }
             }
@@ -348,7 +360,7 @@ body{
         align-items: center;
         font-weight: bold;
         box-shadow: rgba(255, 255, 255, .24) 0px -3px 3px;
-        background-color: rgba(0,0,0,.2);
+        background-color: rgba(0,0,0,.85);
         font-family:'Open Sans', sans-serif;
         .footer-header{
             font-size:24px;
@@ -415,9 +427,9 @@ body{
         }
     .credits{
         font-family: 'Poppins';
-        height:1.5em;
+        height:1.7em;
         font-size:18px;
-        background-color: rgba(0,0,0,.1);
+        background-color: rgba(0,0,0,.62);
     }
 }
 

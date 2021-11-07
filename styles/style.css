@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  background-image: url(../images/endless-constellation.svg);
+  background-color: #F9F4E6;
+  background-image: url(../images/bg.svg);
   color: white;
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
@@ -37,6 +38,7 @@ body main .upper {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.5em;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 body main .upper .home-btn {
@@ -45,7 +47,9 @@ body main .upper .home-btn {
 }
 
 body main .upper .home-btn a {
+  color: gray;
   font-size: 24px;
+  text-shadow: 1px 0px black;
   margin-left: -10px;
 }
 
@@ -60,6 +64,7 @@ body main .upper .logo {
   font-family: 'Lobster', cursive;
   padding-left: 2vw;
   margin-left: 15px;
+  color: darkgray;
 }
 
 body main .upper nav ul {
@@ -75,9 +80,13 @@ body main .upper nav ul li {
   display: flex;
 }
 
+body main .upper nav ul li i {
+  color: gray;
+}
+
 body main .upper nav ul li a {
   font-weight: bold;
-  color: white;
+  color: darkgray;
   font-family: "Poppins";
   padding-left: 3px;
   font-size: 17px;
@@ -97,6 +106,7 @@ body main .upper nav ul li:nth-last-child(1) {
 body main .home {
   text-align: center;
   margin-top: 30vh;
+  color: gray;
   font-weight: bold;
   font-family: 'Poppins';
   text-shadow: black 1px 1px 1px;
@@ -175,29 +185,41 @@ body main .home p {
 
 body main .arrow {
   margin-left: 50%;
-  margin-top: 20vh;
+  margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body main .arrow a #angle-down {
-  color: white;
+  color: gray;
   font-size: 4em;
-  -webkit-animation: moveDown 2.5s infinite;
-          animation: moveDown 2.5s infinite;
+  -webkit-animation: moveDown 2s 3;
+          animation: moveDown 2s 3;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+  text-shadow: 1px 1px black;
 }
 
 @-webkit-keyframes moveDown {
   100% {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    -webkit-transform: translate(0, 70px);
+            transform: translate(0, 70px);
+    -webkit-transition: linear;
+    transition: linear;
   }
 }
 
 @keyframes moveDown {
   100% {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    -webkit-transform: translate(0, 70px);
+            transform: translate(0, 70px);
+    -webkit-transition: linear;
+    transition: linear;
   }
 }
 
@@ -218,7 +240,7 @@ body #about {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.8);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -278,7 +300,6 @@ body #about .about-me .cv-button button:hover {
 
 body #my-work {
   padding: 4em;
-  margin-top: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,11 +311,12 @@ body #my-work {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 body #my-work h1 {
   font-size: 2.5em;
-  color: white;
+  color: gray;
   text-shadow: 1px 1px 1px black;
   font-family: 'Cairo';
   font-weight: bold;
@@ -330,7 +352,7 @@ body #my-work .projects .projects-list .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1vw;
+  padding: 10vh 3vw 10vh 3vw;
   margin: 2em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -342,12 +364,12 @@ body #my-work .projects .projects-list .card:nth-last-child(1) {
 }
 
 body #my-work .projects .projects-list .card:hover {
-  background-color: rgba(184, 103, 103, 0.178);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
 }
 
 body #my-work .projects .projects-list .card h2 {
-  color: white;
+  color: gray;
   text-shadow: 1px 1px 1px black;
   padding-bottom: 1.5em;
   font-size: 2.5em;
@@ -460,13 +482,13 @@ body #my-work .projects .projects-list .card .desc .techs .css {
 
 body #my-work .projects .projects-list .card button {
   margin: 20px;
-  margin-top: 2.5em;
   padding: 4px 7px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border: solid crimson 3px;
   font-size: 1em;
   color: whitesmoke;
+  width: 50%;
   background-color: crimson;
   font-weight: bold;
   -webkit-transform: scale(1.1, 1.1);
@@ -476,7 +498,7 @@ body #my-work .projects .projects-list .card button {
 
 body #my-work .projects .projects-list .card button a {
   color: white;
-  text-shadow: black 1px 1px;
+  text-shadow: brown 2px 2px;
 }
 
 body #my-work .projects .projects-list .card button:hover {
@@ -493,8 +515,8 @@ body #my-work .projects .projects-list .wrapper {
   height: 7px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.534);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
 }
 
 body #contact {
@@ -516,7 +538,7 @@ body #contact {
   font-weight: bold;
   -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0px -3px 3px;
           box-shadow: rgba(255, 255, 255, 0.24) 0px -3px 3px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.85);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -611,9 +633,9 @@ body #contact #contacts .contact-logos li:hover {
 
 body .credits {
   font-family: 'Poppins';
-  height: 1.5em;
+  height: 1.7em;
   font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.62);
 }
 
 @media screen and (max-width: 769px) {
