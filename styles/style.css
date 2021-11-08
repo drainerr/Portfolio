@@ -480,6 +480,14 @@ body #my-work .projects .projects-list .card .desc .techs .css {
   margin: 2px;
 }
 
+body #my-work .projects .projects-list .card .desc .techs .react {
+  background-color: black;
+  padding: 10px;
+  color: cyan;
+  border-radius: 5px;
+  margin: 2px;
+}
+
 body #my-work .projects .projects-list .card button {
   margin: 20px;
   padding: 4px 7px;
