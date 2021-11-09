@@ -122,9 +122,9 @@ body{
             }
         }
         .arrow{
-            margin-left:50%;
             margin-top:15vh;
             display:flex;
+            align-items: center;
             flex-direction: column;
             a{  
                 #angle-down{
@@ -467,16 +467,18 @@ body{
         p{
             max-width:90vw !important;
             font-size:1.5em !important;
-            width:18rem !important;
+            width:70vw !important;
             margin-top:2em;
             padding:0 !important;
             margin-left:50px !important;
         }
         img{
             border-radius:50% !important;
+            width: 45vw !important;
+            height: 45vw !important;
         }
         .cv-button{
-            top: 360px !important;
+            top: 320px !important;
         }
     }
     .project-img{
