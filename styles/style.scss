@@ -467,8 +467,9 @@ body{
         p{
             max-width:90vw !important;
             font-size:1.5em !important;
-            width:20rem !important;
+            width:18rem !important;
             margin-top:2em;
+            padding:0 !important;
             margin-left:50px !important;
         }
         img{
@@ -490,10 +491,9 @@ body{
     }
     .card{
     flex-direction: column;
-    margin:0;
+    margin:0 !important;
     &:hover{
-        background-color: rgba(201, 203, 238, 0.3);
-
+        background-color:unset !important;
     }
     h2{
         padding-top:1.5em;
