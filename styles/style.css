@@ -680,16 +680,17 @@ body .credits {
   }
   #about p {
     max-width: 90vw !important;
-    font-size: 1.5em !important;
+    font-size: 1.4em !important;
     width: 70vw !important;
     margin-top: 2em;
     padding: 0 !important;
     margin-left: 50px !important;
+    position: relative;
   }
   #about img {
     border-radius: 50% !important;
-    width: 45vw !important;
-    height: 45vw !important;
+    width: 170px !important;
+    height: 170px !important;
   }
   #about .cv-button {
     top: 320px !important;
