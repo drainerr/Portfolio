@@ -280,7 +280,7 @@ body #about .about-me {
 }
 
 body #about .about-me .cv-button {
-  margin-top: 2vw;
+  margin-top: 40px;
 }
 
 body #about .about-me .cv-button button {
@@ -581,8 +581,6 @@ body #contact {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0px -3px 3px;
-          box-shadow: rgba(255, 255, 255, 0.24) 0px -3px 3px;
   background-color: rgba(0, 0, 0, 0.85);
   font-family: 'Open Sans', sans-serif;
 }
@@ -711,7 +709,7 @@ body .credits {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 14em !important;
+    padding: 5em 0 !important;
   }
   #about p {
     max-width: 90vw !important;
@@ -787,6 +785,12 @@ body .credits {
 }
 
 @media screen and (max-width: 420px) {
+  main {
+    height: unset !important;
+  }
+  main .home {
+    margin-top: 25vh !important;
+  }
   .project-img img {
     width: 95vw !important;
     height: auto !important;
@@ -801,6 +805,9 @@ body .credits {
     font-size: 20px;
     margin: 0;
     margin-top: 5px;
+  }
+  nav ul li a {
+    font-size: 20px !important;
   }
   .home {
     margin-top: 12vh !important;

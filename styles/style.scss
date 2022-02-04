@@ -172,7 +172,7 @@ body {
       align-items: center;
       flex-direction: column;
       .cv-button {
-        margin-top: 2vw;
+        margin-top: 40px;
         button {
           font-family: 'Cairo';
           border: none;
@@ -394,7 +394,6 @@ body {
     flex-direction: row-reverse;
     align-items: center;
     font-weight: bold;
-    box-shadow: rgba(255, 255, 255, 0.24) 0px -3px 3px;
     background-color: rgba(0, 0, 0, 0.85);
     font-family: 'Open Sans', sans-serif;
     .footer-header {
@@ -491,7 +490,7 @@ body {
   }
   #about {
     flex-direction: column;
-    padding-bottom: 14em !important;
+    padding: 5em 0 !important;
     p {
       max-width: 90vw !important;
       font-size: 1.4em !important;
@@ -564,6 +563,12 @@ body {
   // }
 }
 @media screen and (max-width: 420px) {
+  main {
+    height: unset !important;
+    .home {
+      margin-top: 25vh !important;
+    }
+  }
   .project-img {
     img {
       width: 95vw !important;
@@ -577,6 +582,9 @@ body {
         font-size: 20px;
         margin: 0;
         margin-top: 5px;
+        a {
+          font-size: 20px !important;
+        }
       }
     }
   }
