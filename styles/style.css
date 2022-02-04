@@ -2,17 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-* {
-  -webkit-transition: all 0.3s 0s linear;
-  transition: all 0.3s 0s linear;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #F9F4E6;
+  background-color: #f9f4e6;
   background-image: url(../images/bg.svg);
   color: white;
   font-family: 'Open Sans', sans-serif;
@@ -55,8 +50,8 @@ body main .upper .home-btn a {
 
 body main .upper .home-btn a:hover {
   color: palevioletred;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body main .upper .logo {
@@ -87,7 +82,7 @@ body main .upper nav ul li i {
 body main .upper nav ul li a {
   font-weight: bold;
   color: darkgray;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   padding-left: 3px;
   font-size: 17px;
   margin: auto 3px auto 3px;
@@ -95,8 +90,8 @@ body main .upper nav ul li a {
 
 body main .upper nav ul li a:hover {
   color: palevioletred;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body main .upper nav ul li:nth-last-child(1) {
@@ -152,7 +147,7 @@ body main .home h1 .empName {
 
 body main .home p {
   font-size: 2.3em;
-  padding-top: .7em;
+  padding-top: 0.7em;
   -webkit-animation: ease-out paragraphAnimation 2s;
           animation: ease-out paragraphAnimation 2s;
 }
@@ -275,11 +270,17 @@ body #about .about-me {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body #about .about-me .cv-button {
-  position: absolute;
-  top: 230px;
+  margin-top: 2vw;
 }
 
 body #about .about-me .cv-button button {
@@ -296,8 +297,37 @@ body #about .about-me .cv-button button:hover {
   cursor: pointer;
   background-color: palevioletred;
   color: black;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .html {
+  color: orangered;
+}
+
+body .css {
+  color: cornflowerblue;
+}
+
+body .sass {
+  color: palevioletred;
+}
+
+body .js {
+  color: gold;
+}
+
+body .react {
+  color: cyan;
+}
+
+body .html,
+body .react,
+body .js,
+body .css,
+body .sass {
+  text-shadow: 1px 1px black;
+  text-transform: uppercase;
 }
 
 body #my-work {
@@ -394,10 +424,10 @@ body #my-work .projects .projects-list .card .project-img img:hover {
   cursor: pointer;
   -webkit-animation: skew 1s;
           animation: skew 1s;
-  -webkit-animation-delay: .7s;
-          animation-delay: .7s;
-  -webkit-transition-delay: .7s;
-          transition-delay: .7s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   -webkit-box-shadow: 1px 1px 5px 1px black;
@@ -456,6 +486,7 @@ body #my-work .projects .projects-list .card .desc .techs {
 body #my-work .projects .projects-list .card .desc .techs .html {
   background-color: orangered;
   width: auto;
+  color: white;
   padding: 10px;
   border-radius: 5px;
   margin: 2px;
@@ -464,6 +495,7 @@ body #my-work .projects .projects-list .card .desc .techs .html {
 body #my-work .projects .projects-list .card .desc .techs .scss {
   background-color: palevioletred;
   padding: 10px;
+  color: white;
   border-radius: 5px;
   margin: 2px;
 }
@@ -471,6 +503,7 @@ body #my-work .projects .projects-list .card .desc .techs .scss {
 body #my-work .projects .projects-list .card .desc .techs .js {
   background-color: gold;
   padding: 10px;
+  color: white;
   border-radius: 5px;
   margin: 2px;
 }
@@ -478,6 +511,7 @@ body #my-work .projects .projects-list .card .desc .techs .js {
 body #my-work .projects .projects-list .card .desc .techs .css {
   background-color: cornflowerblue;
   padding: 10px;
+  color: white;
   border-radius: 5px;
   margin: 2px;
 }
@@ -485,6 +519,7 @@ body #my-work .projects .projects-list .card .desc .techs .css {
 body #my-work .projects .projects-list .card .desc .techs .react {
   background-color: black;
   padding: 10px;
+  color: white;
   color: cyan;
   border-radius: 5px;
   margin: 2px;
@@ -515,8 +550,8 @@ body #my-work .projects .projects-list .card button:hover {
   border-radius: 20px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body #my-work .projects .projects-list .wrapper {
@@ -578,8 +613,8 @@ body #contact .contact-nav li a {
 }
 
 body #contact .contact-nav li a:hover {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: white;
 }
 
@@ -614,8 +649,8 @@ body #contact #contacts button a {
 }
 
 body #contact #contacts button:hover {
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: crimson;
 }
 
@@ -637,8 +672,8 @@ body #contact #contacts .contact-logos li a {
 body #contact #contacts .contact-logos li:hover {
   -webkit-transform: scale(1.15, 1.15);
           transform: scale(1.15, 1.15);
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body .credits {
@@ -751,7 +786,7 @@ body .credits {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .project-img img {
     width: 95vw !important;
     height: auto !important;
@@ -769,6 +804,9 @@ body .credits {
   }
   .home {
     margin-top: 12vh !important;
+  }
+  .cv-button {
+    margin-top: 50px !important;
   }
   #my-work h1 {
     font-size: 1.7em;
