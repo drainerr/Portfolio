@@ -403,12 +403,17 @@ body #my-work .projects .projects-list .card:hover {
 body #my-work .projects .projects-list .card h2 {
   color: gray;
   text-shadow: 1px 1px 1px black;
-  padding-bottom: 1.5em;
   font-size: 2.5em;
   max-width: 25vw;
   font-weight: normal;
   font-family: 'Lobster';
   text-align: center;
+}
+
+body #my-work .projects .projects-list .card .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body #my-work .projects .projects-list .card .project-img img {
@@ -479,6 +484,9 @@ body #my-work .projects .projects-list .card .desc .techs {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
+  margin: 3rem 0;
+  font-family: 'Poppins';
+  font-family: 14px;
   text-shadow: black 1px 1px;
   min-width: 25vw;
 }
@@ -526,32 +534,42 @@ body #my-work .projects .projects-list .card .desc .techs .react {
 }
 
 body #my-work .projects .projects-list .card button {
-  margin: 20px;
-  padding: 4px 7px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 0 10px 0 0;
   border: solid crimson 3px;
   font-size: 1em;
   color: whitesmoke;
-  width: 50%;
   background-color: crimson;
   font-weight: bold;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
 body #my-work .projects .projects-list .card button a {
   color: white;
   text-shadow: brown 2px 2px;
+  border-radius: inherit;
 }
 
 body #my-work .projects .projects-list .card button:hover {
-  border-radius: 20px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+body #my-work .projects .projects-list .demo {
+  width: 64px;
+  margin-right: 12px !important;
+  border-radius: 0 0 0 10px !important;
+  background-color: white !important;
+}
+
+body #my-work .projects .projects-list .demo a {
+  border-radius: 0 5px !important;
+  color: red !important;
+  text-shadow: unset !important;
 }
 
 body #my-work .projects .projects-list .wrapper {
@@ -767,7 +785,10 @@ body .credits {
     font-size: 40px;
   }
   #my-work button {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: auto !important;
   }
   #contact {
     -ms-flex-pack: distribute !important;
