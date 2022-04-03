@@ -248,12 +248,13 @@ body {
           padding: 10vh 3vw 10vh 3vw;
           margin: 2em;
           justify-content: space-between;
+          transition: background-color 0.35s ease-in;
+          border-radius: 20px;
           &:nth-last-child(1) {
             margin-bottom: 5em;
           }
           &:hover {
             background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 20px;
           }
           h2 {
             color: gray;
